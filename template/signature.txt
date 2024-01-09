@@ -2,4 +2,4 @@
 [JobTitle]
 
 Email: [EmailAddress]
-Telefone: (31) 3399-4400 [MobileNumber]
+Number: [MainNumber] [MobileNumber]
