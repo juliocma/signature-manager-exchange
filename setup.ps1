@@ -19,5 +19,8 @@ Install-Module Microsoft.PowerShell.PSResourceGet -Repository PSGallery
 Install-PackageProvider -Name NuGet -Force
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
+# Ref: https://learn.microsoft.com/en-us/powershell/module/exchange/set-organizationconfig?view=exchange-ps #
+Set-OrganizationConfig -PostponeRoamingSignaturesUntilLater $True
+
 # Load the Exchange Online PowerShell module #
 Import-Module ExchangeOnlineManagement
